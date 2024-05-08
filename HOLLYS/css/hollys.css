@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+ul,li{list-style:none;}
+a{display:block; text-decoration:none; color:#6f6f6f;}
+span{display:block;}
+body{width: 100%; height: 100%;}
+*{margin:0; padding:0;}
+/*전체 공통 설정*/
+header{width:100%; height:100px; margin:0 auto;}
+#h1{width: 250px; height: 80px; position: relative; left: 100px; top: 10px;}
+#h1>a{position: absolute; left: 20px; top: 0;}
+#h1>span{position: absolute; left: 140px; top: 15px;}
+/*header left end*/
+#rogo{width:66px; height: 55px; margin: 0 auto; position: absolute;
+top: 10px; left: 50%;}
+/*header logo end*/
+.h2{width: 450px; height: 100px; position: relative; left: 73%; bottom: 57px;}
+.h2 li{float: left; position: relative; right: 0; top: 0; 
+    padding: 5px; text-align: center;}
+.h2::after{content:""; display: block; clear: both;}
+/*header right end, clear ok*/
+#nav{width:100%;height:60px;position:relative;}
+#nav>ul{width:100%;height:60px;margin:0 auto;}
+#nav>ul>li{width:180px;height:60px;float:left;}
+#nav>ul>li>a{width:100%;height:100%; margin: 0 auto; position: relative; left: -50%;
+    text-align:center;line-height:60px;color:#383737;
+    font-weight:bold; font-size:18px;}
+#nav>ul>li>a>span{font-size:12px;color:grey;position:relative;
+top:-40px;text-align:center;opacity:0;}
+#nav ul:hover span{opacity:1; color:white;}
+#nav ul li .smenu{position:absolute; margin-left:-95px; margin-top: 10px;
+width:220px;height:0;overflow:hidden;z-index:9999;}
+#nav ul li .smenu li{width:200px;height:30px; }
+#nav ul li .smenu li>a{display:block;width:90%;height:100%; color:#383737;
+ text-align:center;}
+#nav ul li .smenu li:hover a{color:white;}
+#nav .na{width:100%;height:0px;
+background:#666;position:absolute;
+left:0;top:60px;z-index:1;}
+#nav ul:hover .na, #nav ul:hover .smenu
+{height:250px;transition:all 1s;}
+#nav>ul>li:hover>a{color:#fff;background:#ba000c;}
+.border1{border:2px solid #ba000c;}
+/*menubar end*/
+aside{width: 89px; height: 89px; position: fixed; right: 90px; top: 65px;}
+/*aside end*/
+article{width: 100%; height: 750px; margin: 0 auto; position: relative; left: 10%;}
+article>.as{width: 80%; height: 750px; margin: 0 auto; position: relative; left: 0;}
+article>.as>.fr{width: 225px; height: 259px; 
+    position: relative; left: 70px; top: 0;}
+article>.as>.fr>li{width: 225px; height: 18px; background:#faf9f7;}
+article>.as>.a1{width: 720px; height: 259px; position: absolute; 
+    left: 240px; top: 10px;}
+article>.as>.a1>.hm{width: 100%; height: 300px; position: relative;
+left: 70px; top: 30px;}
+article #wrap{width: 80%; height: 214px; position: absolute; left: 0;}
+#wrap .hm1{width: 100%; height: 140px; position: relative; top: 20px;}
+#wrap .hm1>li{float: left; position: relative; text-align: center; width: 25%; top: 0; top: 0;}
+#wrap .hm1>li img{width: 80%; position: relative; left: 10px;}
+#wrap .hm1 span{font-size: 12px; text-align: center;}
+#wrap .hm1 #b{border-left:1px solid darkgray; float: left; width: 5px; height: 100px; position: relative;
+left: 150px; top: -120px; }
+#wrap::after{content: ""; display: block; clear: both;}
+.as .s{position: absolute; right: -90px; top: 10px;  width: 240px; height: 244px;}
+.as .h{position: absolute; left: -220px; top: 300px; width: 160%; }
+.as .h>li{float: left; margin-left: 50px;}
+.as .h img{width: 100%; height: 100%;}
+.as .a2{ width: 100%; height: 30%; position: absolute; top: 500px; left: 0;}
+.as .a2>li{float: left; position: relative; left: 20px; margin-left: 50px; top: 0;}
+.as .a2>li:nth-child(3){position: relative; width: 270px; height: 200px; left: 50px;}
+.a2 .a22{width: 270px; height: 100px; font-size: 13px;}
+.a22>li{height: 20px; position: relative; left: 0;}
+.a22 span{position: relative; left: 230px; top: -20px;}
+.a12{position: absolute; font-size: 13px; width: 220px; left: 0;}
+.a2 .a23{width: 170px; height: 60px; position: absolute; left: 920px; margin: 0 auto; top: 15px;}
+.a23 img{width: 60%;}
+.a23>li{float: left; position: relative; left: 0; width: 55px; height: 60px;  text-align: center;
+font-size: 13px;}
+.a23>li:nth-child(2){border-left:1px solid darkgray; width: 5px; height: 45px; position: relative; margin: 10px; top: -10px;}
+.a23 span{width: 55px; height: 15px; bottom: 0; position: absolute;}
+.a2 .bar3{width: 990px; height: 2px; background: #ba000c; position: absolute; left: 70px; bottom: 100px; text-align: center;}
+.a2 .a24{width: 210px; height: 30px; position: absolute; left: 70px; bottom: 50px;}
+.a2 .a24 img{float: left; margin-left: 2px; position: relative; right:0; top: 2px;}
+
+footer{width: 100%; height: 200px; background: #ba000c; position: relative; right: 0; top:0;}
+footer>.foot{position: absolute; top: 20px; left: 450px; width: 903px; height: 30px;}
+.foot>li{float: left; left:0; top:5px; width: 90px; height: 30px; text-align: center; line-height: 30px;}
+.foot>li>a{color: white; font-size: 10px; position: relative; left: 0;}
+.foot #fb{width: 1px; border-left: 1px solid white; height: 10px; position: relative; top: 10px; left: 0;}
+.foot #fa{position: relative; top: -6px; margin: 6px; text-align: center;}
+.foot #ff{position: relative; text-align: left; left: 10px; top: -1px; margin-right: -30px;}
+
+footer>.foot::after{content: ""; display: block; clear: both;}
+footer .fl{width: 900px; height: 50px; font-size: 11px; color:#de898e; position: absolute;  left: 450px; top: 100px;}
+
+/*
+
+
+
+
+
+
+
+*/
