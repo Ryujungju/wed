@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;}
+
+ul{
+    list-style: none;}
+
+a:link , a:visited{
+    color:#333;
+    text-decoration: none;}
+
+/*공통 적용*/
+
+.bx1{
+    background:linear-gradient(to bottom, rgba(150, 167, 224, 0.5), #4ddfff), linear-gradient(to bottom, #96a7e0, #525b7a);
+    width: 1164px;
+    height: 750px;
+    box-shadow: 4px 36px 36px 0 rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 20%;
+    top: 80px;
+    overflow: hidden;
+    opacity: 0;
+    animation: bg 3s linear 1s alternate forwards;}
+
+@keyframes bg{
+        from{opacity: 0;}
+        to{opacity: 100%;}}
+
+.bx1 .name{
+    width: 387px;
+    height: 160.9px;
+    object-fit: contain;
+    position: absolute;
+    left: 35%;
+    bottom: -22%;}
+
+.bx1 .v1{
+    width: 685px;
+    height: 684.5px;
+    margin: 0 14px 0 0;
+    object-fit: contain;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: -91%;} 
+  
+.bx1 .v2{
+    width: 465px;
+    height: 684px;
+    margin: 0.5px 0 0 14px;
+    object-fit: contain;
+    opacity: 0;
+    position: absolute;
+    right: -2px;
+    bottom: -80%;}
+
+.bx1 .c1{
+    width: 1372px;
+    height: 1380px;
+    object-fit: contain;
+    position: absolute;
+    left: -104px;
+    bottom: -184%;
+    opacity: 0;}
+
+.bx1 .c2{
+    width: 1372px;
+    height: 1380px;
+    object-fit: contain;
+    position: absolute;
+    right: -628px;
+    bottom:-184%;
+    opacity: 0;} 
+
+.bx1 .c3{
+    width: 1372px;
+    height: 1380px;
+    object-fit: contain;
+    position: absolute;
+    right: -500px;
+    top: -184%;}
+.bx1 .c4{
+    width: 1372px;
+    height: 1380px;
+    position: absolute;
+    left: -600px;
+    top: -184%;
+    object-fit: contain;}
+
+.bx1 .c5{
+    width: 1372px;
+    height: 1380px;
+    object-fit: contain;
+    position: absolute;
+    left: -480px;
+    bottom: -184%;}
+    
+.bx1 .me{
+    width: 222px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 63px;
+    top: -258px;
+    opacity: 0;
+    z-index: 9;}
+
+.bx1 .ts{
+    object-fit: contain;
+    position: absolute;
+    right: -72%;
+    top: -27%;
+    opacity: 0;
+    z-index: 9;}
+
+.bx1 .st{
+    position: absolute;
+    left:25%;
+    object-fit: contain;
+    z-index: 9;
+    opacity: 0;}
+
+.bx1 .box{
+    width: 490px;
+    height: 421px;
+    object-fit: contain;
+    border-radius: 60px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #f8efef 0%, #fff6e5 100%);
+    position: absolute;
+    left: 17%;
+    bottom: 7%;
+    z-index: 8;
+    opacity: 0;}
+
+.box .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 98px;
+    margin-top: 80px;}
+
+.text p{
+    font-family: Hahmlet;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    margin-bottom: 8px;}
+
+.text h4{
+    font-family: Hahmlet;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    margin-bottom: 8px;}
+
+/*main end*/
+
+.section{
+    background:linear-gradient(to bottom, rgba(150, 167, 224, 0.5), #4ddfff), linear-gradient(to bottom, #96a7e0, #525b7a);}
+
+/*공통 적용*/
+
+.section:nth-child(2){
+    color:white;}
+
+.profile{
+    width: 1164px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 50px;}
+
+.profile h1{
+    font-family: Hahmlet;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 5px;
+    margin-top: 5px;}
+
+.profile p {
+    font-family: Hahmlet;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;}
+
+.profile span {
+    font-family: Hahmlet;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;}
+
+.profile .sc{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 31%;
+    top: 4.1%;}
+
+.profile .we{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;}
+
+/*section2 end*/
+
+.section:nth-child(3) .slied{
+    width: 1160px;
+    height: 850px;
+    position: absolute;
+    left: 0;
+    top: 0;}
+
+.slide .txt{
+    background: white;
+    border-radius: 50%;
+    width: 1160px;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 20%;
+    line-height: 40px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 36px 36px 0 rgba(0, 0, 0, 0.25);}
+
+.slide:first-child .txt{
+    background: url(../img/s1.png) 50%;}
+.slide:nth-child(2) .txt{
+    background: url(../img/s2.png) 50%;}
+.slide:nth-child(3) .txt{
+    background: url(../img/s3.png) 50%;}
+.slide:nth-child(4) .txt{
+    background: url(../img/s4.png) 50%;}
+.slide:nth-child(5) .txt{
+    background: url(../img/s5.png) 50%;}
+.slide:nth-child(6) .txt{
+    background: url(../img/s6.png) 50%;}
+.slide:nth-child(7) .txt{
+    background: url(../img/s7.png) 50%;}
+
+
+.txt h1{
+    font-family: BlackHanSans;
+    font-size: 96px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4ddfff;}
+
+.txt h2{
+    font-family: Hahmlet;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4ddfff;}
+
+.txt img{
+    margin-top: 5px;
+    cursor: pointer;}
+
+/*section 3 end*/
+
+.section:nth-child(4) .bye{
+    text-align: center;
+    margin-top: 20%;
+    font-family: Hahmlet;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    margin-bottom: 8px;}
