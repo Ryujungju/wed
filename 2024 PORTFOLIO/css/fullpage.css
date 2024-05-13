@@ -127,7 +127,7 @@ html.fp-enabled,
     left: 15px;
     width: 90px;
     height: 150px;
-    background: url(../img/btn\ l.png);
+    background: url(../img/btn\ l.png)no-repeat;
     border: none;
     
 }
@@ -135,7 +135,7 @@ html.fp-enabled,
     right: 45px;
     width: 90px;
     height: 150px;
-    background: url(../img/btn\ r.png);
+    background: url(../img/btn\ r.png)no-repeat;
     border: none;
 }
 .fp-scrollable {
